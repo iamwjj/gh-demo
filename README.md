@@ -1,3 +1,4 @@
-# gh-demo
+# gp-demos
 
-GithubPages的demo
+GithubPages的demo仓库
+
