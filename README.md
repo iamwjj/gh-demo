@@ -1,3 +1,3 @@
-# gh-demo
+# gp-demo
 
 GithubPages的demo
