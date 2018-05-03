@@ -24,14 +24,16 @@
 </div>
 
 <script>
-    // //监听window窗口的滚动事件
-    // window.addEventListener('scroll', (e) => {
-    //     console.log('window');
-    // })
-    // //监听document对象的滚动事件
-    // document.addEventListener('scroll', (e) => {
-    //     console.log('document');
-    // })
+    //监听window窗口的滚动事件
+    window.addEventListener('scroll', (e) => {
+        console.log('window');
+    })
+    //监听document对象的滚动事件
+    document.addEventListener('scroll', (e) => {
+        console.log('document');
+        e.preventDefault();
+        e.stopPropagation();
+    })
     // //监听html元素的滚动事件
     // document.documentElement.addEventListener('scroll', (e) => {
     //     console.log('html');
