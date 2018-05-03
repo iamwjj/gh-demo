@@ -28,19 +28,18 @@
     window.addEventListener('scroll', (e) => {
         console.log('window');
     })
+
     //监听document对象的滚动事件
     document.addEventListener('scroll', (e) => {
         console.log('document');
-    })
-    //监听html元素的滚动事件
-    document.documentElement.addEventListener('scroll', (e) => {
-        console.log('html');
-    })
-    //监听body元素的滚动事件
-    document.body.addEventListener('scroll', (e) => {
-        console.log('body');
+        e.stopPropagation();
     })
 
+    //监听鼠标滚轮滚动事件
+    document.addEventListener('mousewheel', (e) => {
+        console.log('mousewheel');
+        e.preventDefault();
+    })
 </script>
 
 </body>
