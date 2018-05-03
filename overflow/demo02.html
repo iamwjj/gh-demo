@@ -29,9 +29,13 @@
         console.log('window');
     })
     //监听document对象的滚动事件
+    document.addEventListener('mousewheel', (e) => {
+        console.log('mousewheel');
+        e.preventDefault();
+    })
+
     document.addEventListener('scroll', (e) => {
         console.log('document');
-        e.preventDefault();
         e.stopPropagation();
     })
     // //监听html元素的滚动事件
